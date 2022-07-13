@@ -2,6 +2,10 @@ import React from 'react';
 //4 - importação de componentes
 import FirstComp from './Components/FirstComponent';
 
+//4 - desestruturando props
+import SecondComp from './Components/SecondComponent';
+import Destructuring from './Components/Destructuring';
+
 function App() {
   //1 variaveis
   //{} = execução de JS 
@@ -27,6 +31,12 @@ function App() {
       )}
       <h3>{UserGreeting(name)}</h3>
       <FirstComp />
+      <SecondComp name = "Segundo"/>
+      <Destructuring 
+        title='Hello World' 
+        content='Amando React' 
+        QtdComents={10}
+        tags = {["ts", "js"]}/>
     </div>
   );
 }
