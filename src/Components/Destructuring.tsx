@@ -5,9 +5,16 @@ interface Props{
     content : string
     QtdComents : number
     tags : string[]
+    category : Category
 }
 
-const Destructuring = ({title, content, QtdComents, tags} : Props) => {
+export enum Category{
+    TS = "TypeScript",
+    JS = "JavaScript",
+    P = "Python",
+}
+
+const Destructuring = ({title, content, QtdComents, tags, category} : Props) => {
     return (
         <div>
            <h2> {title} </h2>
@@ -17,7 +24,8 @@ const Destructuring = ({title, content, QtdComents, tags} : Props) => {
                 {tags.map(tag => (
                     <span>#{tag}</span>
                 ))}
-           </div>     
+           </div>
+           <h4> Categoria : {category}</h4>     
         </div>
         
     )
