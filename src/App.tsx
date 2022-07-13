@@ -2,9 +2,13 @@ import React from 'react';
 //4 - importação de componentes
 import FirstComp from './Components/FirstComponent';
 
-//4 - desestruturando props
+//5- desestruturando props
 import SecondComp from './Components/SecondComponent';
 import Destructuring from './Components/Destructuring';
+
+//6 - Use state
+import State from './Components/State';
+
 
 function App() {
   //1 variaveis
@@ -37,6 +41,7 @@ function App() {
         content='Amando React' 
         QtdComents={10}
         tags = {["ts", "js"]}/>
+      <State/>
     </div>
   );
 }
