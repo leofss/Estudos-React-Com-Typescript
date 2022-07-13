@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>TypeScript com React</h1>
+      <h1>TypeScript com Reactt</h1>
     </div>
   );
 }
